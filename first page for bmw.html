@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW</title>
+  <link rel="stylesheet" href="first pae for bmw13.css">
+</head>
+<body>
+
+  <!-- 🔥 Background Video -->
+  <video autoplay muted loop class="video-background">
+    <source src="CARS VIDEO/VIDEO FOR BACKGROUND.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🚗 Navbar -->
+  <nav>
+    <div class="logo">BMW</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu" id="menu">
+      <a href="first page for bmw.html">Home</a>
+      <a href="gallry2.html">Gallery</a>
+      <a href="BMW CAR.HTML">About BMW Car</a>
+      <a href="BMW MOTORCYCLE.HTML">About BMW Motorcycle</a>
+      <a href="contacts for website.html">Contact</a>
+      
+    </div>
+  </nav>
+
+  <!-- ✨ Content -->
+  <div class="content">
+    <h1>WELCOME TO THE BMW WORLD</h1>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

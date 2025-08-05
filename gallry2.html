@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonHub</title>
+  <link rel="stylesheet" href="gallry2.css">
+ 
+</head>
+<body>
+
+  <nav>
+    <div class="logo">BMW</div>
+
+    <div class="nav-center">
+      <div class="menu" id="menu">
+        <a href="first page for bmw.html">Home</a>
+        <a href="gallry2.html">Gallery</a>
+        <a href="BMW CAR.HTML">About BMW Car</a>
+        <a href="BMW MOTORCYCLE.HTML">About BMW Motorcycle</a>
+        <a href="contacts for website.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <header>
+    BMW GALLERY
+  </header>
+
+  <section class="hero">
+    Your Digital Experience Starts Here
+  </section>
+
+  <section class="section">
+    <h2>CARS AND MOTORCYCLE VIDEOS</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls>
+          <source src="CARS VIDEO/2023 BMW 7-Series Individual - New Brutal Luxury Sedan in details.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="CARS VIDEO/2023 BMW X6 M Competition - Interior, Exterior and Drive.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="CARS VIDEO/2025 BMW M5 M Performance - Interior, Exterior and Drive.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="motorcycle video/BMW S1000XR 2021 test ride review.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="motorcycle video/BMW S1000RR Street Riding  This bike is NUTS.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls>
+          <source src="motorcycle video/2023 BMW R1250 RS  First Ride Review.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>CARS AND MOTORCYCLE PICTURE</h2>
+    <div class="image-grid">
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="CARS PICTURE/7Series.jpg" alt="BMW 7 Series" />
+        <div class="back">
+          <h3>BMW 7 Series</h3>
+          <p>The BMW 7 Series is a stylish and high-tech luxury car with strong performance.</p>
+        </div>
+      </div>
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="CARS PICTURE/x6.jpg" alt="BMW X6" />
+        <div class="back">
+          <h3>BMW X6</h3>
+          <p>The BMW X6 is a high-performance luxury SUV that offers impressive driving dynamics and a sleek, aggressive design.</p>
+        </div>
+      </div>
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="CARS PICTURE/bmw m5.avif" alt="BMW M5" />
+        <div class="back">
+          <h3>BMW M5</h3>
+          <p>The BMW M5 is a high-performance sports sedan, featuring extreme power and precision engineering.</p>
+        </div>
+      </div>
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="motorcycle picture/S 1000 XR.webp" alt="BMW S 1000 XR" />
+        <div class="back">
+          <h3>BMW S 1000 XR</h3>
+          <p>The BMW S 1000 XR is a sports touring motorcycle that offers comfort, performance, and cutting-edge technology.</p>
+        </div>
+      </div>
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="motorcycle picture/S 1000 RR.jpg" alt="BMW S 1000 RR" />
+        <div class="back">
+          <h3>BMW S 1000 RR</h3>
+          <p>The BMW S 1000 RR is a superbike designed for thrilling speed and track-level performance.</p>
+        </div>
+      </div>
+      <div class="image-card" onclick="flipCard(this)">
+        <img src="motorcycle picture/R 1250 RS.jpg" alt="BMW R 1250 RS" />
+        <div class="back">
+          <h3>BMW R 1250 RS</h3>
+          <p>The BMW R 1250 RS is a performance-oriented sport-touring motorcycle that offers great handling and advanced features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    function flipCard(card) {
+      card.classList.toggle('flipped');
+    }
+  </script>
+
+</body>
+</html>
